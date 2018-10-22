@@ -1,8 +1,8 @@
-# Image Recognition Thesis - "Research and implementation of image recognition via deep learning"
+# Thesis - "Research and implementation of image recognition via deep learning"
 
 This repository will contain the code that was created during my Bachelor thesis.
 
-Summary:
+## Summary:
 
 -Code uses keras 2.2 and 2.4.
 
@@ -18,7 +18,7 @@ Summary:
 
 -Single layer NN was only tested on MNIST. Both CIFARs only contain DNN and CNN.
 
-Testing:
+## Testing:
 
 o	Number of hidden layers
 
