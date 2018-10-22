@@ -16,3 +16,20 @@ Summary:
 
 -Datasets used are the MNIST database, CIFAR-10, and CIFAR-100. ImageNET may be done if time/resources permits.
 
+-Single layer NN was only tested on MNIST. Both CIFARs only contain DNN and CNN.
+
+Testing:
+
+o	Number of hidden layers
+
+o	Epochs
+
+o	Batch size
+
+o	Dropout, batch normalisation (ordering of layers too)
+
+o	Activation functions – sigmoid, tanh, relu, softmax
+
+o	Optimisers – learning rate, momentum.
+
+o	Loss functions – cross entropy.
