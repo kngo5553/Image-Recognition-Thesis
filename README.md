@@ -33,3 +33,15 @@ o	Activation functions – sigmoid, tanh, relu, softmax
 o	Optimisers – learning rate, momentum.
 
 o	Loss functions – cross entropy.
+
+o And more!
+
+## Best results (Will update this later):
+
+o MNIST DNN
+
+o MNIST CNN
+
+o CIFAR-10 CNN
+
+o CIFAR-100 CNN fine labels
