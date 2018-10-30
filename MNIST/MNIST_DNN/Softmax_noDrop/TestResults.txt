@@ -1,0 +1,16 @@
+--After validation set--
+Test loss: 2.301198956680298
+Test accuracy: 0.1135
+
+--After test set--
+Test loss: 2.301066008758545
+Test accuracy: 0.1135
+
+Done on plaidml AMD
+
+https://i.imgur.com/NVndZNH.png
+https://i.imgur.com/0SnIKPM.png
+
+overfitting
+softmax is not ideal for hidden layers because it ensures that the entire output of the layer adds up to 1. this messes up everything 
+because it limits values of neurons by depending on each other, thereby ruining the whole independent adjustment via weights/bias.

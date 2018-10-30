@@ -1,0 +1,20 @@
+--After validation set--
+Time:349.248s
+Test loss: 1.0105271741867066
+Test accuracy: 0.6882
+
+--After test set--
+Time:107.070s
+Test loss: 1.0231253994941711
+Test accuracy: 0.6929
+
+Total Time:456.318s
+
+Done on plaidml AMD
+
+
+https://i.imgur.com/OST0P4i.png
+https://i.imgur.com/QsdU9NG.png
+
+dropout in dense layers
+https://i.imgur.com/K44Lz8Z.png

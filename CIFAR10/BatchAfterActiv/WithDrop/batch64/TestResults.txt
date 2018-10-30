@@ -1,0 +1,18 @@
+--After validation set--
+Time:2601.616s
+Test loss: 0.5020882855892181
+Test accuracy: 0.853
+
+--After test set--
+Time:539.308s
+Test loss: 0.5283942032098771
+Test accuracy: 0.8509
+
+Total Time:3140.924s
+
+Done on plaidml AMD
+
+https://i.imgur.com/YriHSdZ.png
+https://i.imgur.com/OST0P4i.png
+https://i.imgur.com/QsdU9NG.png
+https://i.imgur.com/fvnJYNj.png

@@ -1,0 +1,16 @@
+--After validation set--
+Time:373.315s
+Test loss: 2.39692466468811
+Test accuracy: 0.3873
+
+--After test set--
+Time:93.909s
+Test loss: 2.6631635803222657
+Test accuracy: 0.4338
+
+Total Time:467.223s
+
+
+nvidia
+
+batch 256 - 2 dense layers 

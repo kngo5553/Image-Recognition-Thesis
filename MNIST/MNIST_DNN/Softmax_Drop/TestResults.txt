@@ -1,0 +1,19 @@
+--After validation set--
+Time:109.069s
+Test loss: 2.301107255554199
+Test accuracy: 0.1135
+
+--After test set--
+Time:54.020s
+Test loss: 2.301139987182617
+Test accuracy: 0.1135
+
+Total Time:163.089s
+
+Done on plaidml AMD
+
+https://i.imgur.com/NVndZNH.png
+https://i.imgur.com/0SnIKPM.png
+
+overfitting
+as epxected, softmax is still bad. not gonna continue testing after this.

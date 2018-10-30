@@ -1,0 +1,15 @@
+
+--After validation set--
+Time:617.314s
+Test loss: 1.8083523448944092
+Test accuracy: 0.5379
+
+--After test set--
+Time:131.799s
+Test loss: 1.7237678926467896
+Test accuracy: 0.5575
+
+Total Time:749.113s
+
+nvidia
+

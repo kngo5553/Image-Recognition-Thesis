@@ -33,11 +33,11 @@ class TimeHistory(keras.callbacks.Callback):
 #Set the respective hyperparameters
 batch_size = 128
 num_classes = 10
-epochs = 20
-num_hidden_layers = 3
+epochs = 3
+num_hidden_layers = 1
 
 #relu, tanh, sigmoid, softmax
-activationFN = 'relu'
+activationFN = 'sigmoid'
 
 #RMSprop(), SGD, Adam, Adagrad, Adadelta
 optimiserFN = RMSprop()
@@ -46,7 +46,7 @@ optimiserFN = RMSprop()
 lossFN = 'categorical_crossentropy'
 
 # File name for the generated model, figures, and diagrams.
-short_name = 'MNIST_DNN'
+short_name = 'MNIST_NN'
 file_name = short_name + '_' + str(num_hidden_layers) + 'hiddenlayers_' + activationFN
 
 
@@ -76,12 +76,12 @@ y_test = keras.utils.to_categorical(y_test, num_classes)
 model = Sequential()
 # Initial layer that creates the input shape.
 model.add(Dense(512, activation=activationFN, input_shape=(784,)))
-model.add(Dropout(0.2))
+#model.add(Dropout(0.2))
 
 #Create the rest of num_layers inheriting input shape.
 for x in range(num_hidden_layers):
     model.add(Dense(512, activation=activationFN))
-    model.add(Dropout(0.2))
+    #model.add(Dropout(0.2))
 
 # Final output layer. Use softmax for probability.
 model.add(Dense(num_classes, activation='softmax'))
@@ -104,7 +104,7 @@ history = model.fit(x_train, y_train,
                     epochs=epochs,
                     verbose=1,
                     validation_split=1.0/12.0,
-                    callbacks=[TimeHistory()])
+                    callbacks=[TimeHistory()], early_stopping)
                    # callbacks=[PlotLossesKeras()])
                    # callbacks=[early_stopping])
 
@@ -121,6 +121,7 @@ plt.title('Model accuracy')
 plt.ylabel('Accuracy')
 plt.xlabel('Epoch')
 plt.legend(['Train', 'Test'], loc='upper left')
+plt.annotate("test", loc='upper right')
 plt.savefig(short_name + '_accuracy_' + str(epochs) + 'epochs')
 #plt.show()
 
@@ -136,10 +137,10 @@ plt.savefig(short_name + '_loss_' + str(epochs) + 'epochs')
 #plt.show()
 
 #Early stopping of the training if loss increases too often.
-early_stopping = EarlyStopping(monitor='loss', patience=10)#, restore_best_weights=True)
+early_stopping = EarlyStopping(monitor='loss', patience=5)#, restore_best_weights=True)
 
 #Train the final model with all 60,000 examples for 3 epochs
-history = model.fit(x_train, y_train, batch_size=batch_size, epochs=3,
+history = model.fit(x_train, y_train, batch_size=batch_size, epochs=5,
           verbose=1,
           callbacks=[TimeHistory(), early_stopping])
 

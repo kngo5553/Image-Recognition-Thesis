@@ -1,0 +1,13 @@
+--After validation set--
+Test loss: 0.28800563740730284
+Test accuracy: 0.9768
+
+--After test set--
+Test score: 0.24304859647750854
+Test accuracy: 0.9821
+
+Done on plaidml AMD
+
+
+https://i.imgur.com/AfQmAcW.png
+https://i.imgur.com/QsdU9NG.png

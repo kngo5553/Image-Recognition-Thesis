@@ -1,0 +1,18 @@
+--After validation set--
+Time:129.188s
+Test loss: 0.09637205245494843
+Test accuracy: 0.9802
+
+--After test set--
+Time:49.041s
+Test loss: 0.10317852725982667
+Test accuracy: 0.9805
+
+Total Time:178.229s
+
+Done on plaidml AMD
+
+https://i.imgur.com/NVndZNH.png
+https://i.imgur.com/0SnIKPM.png
+
+overfitting
