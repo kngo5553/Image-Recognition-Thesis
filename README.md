@@ -2,6 +2,9 @@
 
 This repository will contain the code that was created during my Bachelor thesis.
 
+Cite this using: [![DOI](https://zenodo.org/badge/154139925.svg)](https://zenodo.org/badge/latestdoi/154139925)
+
+
 ## Summary:
 
 -Code uses keras 2.2 and 2.4.
